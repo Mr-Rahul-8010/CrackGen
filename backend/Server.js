@@ -35,7 +35,8 @@ app.use("/api", subjectRouter);
 
 // Signup
 app.post("/api/signup", async (req, res) => {
-
+    console.log("SIGNUP REQUEST RECEIVED");
+    console.log(req.body);
     try {
 
         const { name, email, password } = req.body;
@@ -120,6 +121,6 @@ app.post("/api/login", async (req, res) => {
 
 const PORT = process.env.PORT || 5001;
 
-app.listen(PORT, ()=>{
+app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
