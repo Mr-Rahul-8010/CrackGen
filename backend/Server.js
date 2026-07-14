@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -10,7 +11,7 @@ const subjectRouter = require('./routes/subjectRouter');
 const app = express();
 
 // Database Connection
-mongoose.connect('mongodb://localhost:27017/crackGen')
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("Database Connected"))
     .catch((err) => console.log(err));
 
