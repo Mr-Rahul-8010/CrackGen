@@ -19,7 +19,8 @@ mongoose.connect(process.env.MONGO_URI)
 app.use(cors({
     origin: [
         "https://crack-gen.vercel.app",
-        "https://crack-gen-git-main-darkstarr.vercel.app"
+        "https://crack-gen-git-main-darkstarr.vercel.app",
+        "https://crack-bpnx6ebue-darkstarr.vercel.app"
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
