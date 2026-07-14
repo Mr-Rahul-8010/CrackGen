@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URI)
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://your-vercel-app.vercel.app"
+        "https://crack-gen.vercel.app"
     ],
     credentials: true
 }));
