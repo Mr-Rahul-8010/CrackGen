@@ -18,8 +18,8 @@ mongoose.connect(process.env.MONGO_URI)
 // Middlewares
 app.use(cors({
     origin: [
-        "http://localhost:5173",
-        "https://crack-gen.vercel.app"
+        "https://crack-gen.vercel.app",
+        "https://crack-gen-git-main-darkstarr.vercel.app"
     ],
     credentials: true
 }));
