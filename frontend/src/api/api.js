@@ -1,13 +1,15 @@
-export async function getMessage(){
+// export async function getMessage(){
 
-    const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/message`,
-        {
-            credentials: "include"
-        }
-    );
+//     const response = await fetch(
+//         `${import.meta.env.VITE_API_URL}/api/message`,
+//         {
+//             credentials: "include"
+//         }
+//     );
 
-    const data = await response.json();
+//     const data = await response.json();
 
-    return data;
-}
+//     return data;
+// }
+
+// api.js
