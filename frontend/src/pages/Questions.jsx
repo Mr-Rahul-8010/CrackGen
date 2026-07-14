@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import "./Questions.css";
 import jsPDF from "jspdf";
+import { API_URL } from "../config";
 
 const Questions = () => {
 
@@ -15,8 +16,7 @@ const Questions = () => {
 
             try {
 
-                const response = await fetch(
-                    `${import.meta.env.VITE_API_URL}/api/questions/${subject}`,
+                const response = await fetch(`${API_URL}/api/questions/${subject}`, 
                     {
                         credentials: "include"
                     }

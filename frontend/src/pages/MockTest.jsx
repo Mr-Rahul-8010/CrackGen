@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./MockTest.css";
+import { API_URL } from "../config";
 
 const MockTest = () => {
 
@@ -14,7 +15,7 @@ const MockTest = () => {
 
     useEffect(() => {
 
-        fetch(`${import.meta.env.VITE_API_URL}/api/mock/${subject}`, {
+        fetch(`${API_URL}/api/mock/${subject}`,{
             credentials: "include"
         })
             .then(res => res.json())
