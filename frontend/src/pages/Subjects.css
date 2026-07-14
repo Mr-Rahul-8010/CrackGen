@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.subject-container{
+    min-height: 100vh;
+    padding: 50px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #1e293b
+    );
+}
+
+.heading{
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 3rem;
+
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.heading::after{
+
+    content: "";
+
+    width: 100px;
+
+    height: 4px;
+
+    background: #38bdf8;
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    bottom: -12px;
+
+    border-radius: 10px;
+}
+
+.subject-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 35px;
+}
+
+.subject-card{
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 20px;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.subject-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+
+    border: 1px solid #38bdf8;
+}
+
+.subject-card h2{
+
+    color: white;
+
+    font-size: 2rem;
+
+    margin-bottom: 25px;
+}
+
+.subject-card button{
+
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #38bdf8;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.subject-card button:hover{
+
+    background-color: #0ea5e9;
+
+    transform: scale(1.05);
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .subject-container{
+
+        padding: 40px 20px;
+    }
+
+    .heading{
+
+        font-size: 2.3rem;
+    }
+
+    .subject-card{
+
+        padding: 30px 20px;
+    }
+
+    .subject-card h2{
+
+        font-size: 1.7rem;
+    }
+
+    .subject-card button{
+
+        width: 100%;
+    }
+
+}
+
+.section{
+
+    margin-bottom: 80px;
+
+}
+
+.section-title{
+
+    color: white;
+
+    font-size: 2rem;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+.subject-card p{
+
+    color: #cbd5e1;
+
+    margin-bottom: 25px;
+
+    line-height: 1.6;
+
+}
+
+.stack{
+
+    border-top: 4px solid #38bdf8;
+
+}
