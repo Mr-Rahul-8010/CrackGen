@@ -14,7 +14,7 @@ const MockTest = () => {
 
     useEffect(() => {
 
-        fetch(`/api/mock/${subject}`, {
+        fetch(`${import.meta.env.VITE_API_URL}/api/mock/${subject}`, {
             credentials: "include"
         })
             .then(res => res.json())

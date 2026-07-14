@@ -16,7 +16,7 @@ const Signup = () => {
 
         try {
 
-            const response = await fetch("/api/signup", {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/signup`, {
 
                 method: "POST",
 

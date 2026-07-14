@@ -15,9 +15,12 @@ const Questions = () => {
 
             try {
 
-                const response = await fetch(`/api/questions/${subject}`, {
-                    credentials: "include"
-                });
+                const response = await fetch(
+                    `${import.meta.env.VITE_API_URL}/api/questions/${subject}`,
+                    {
+                        credentials: "include"
+                    }
+                );
 
                 const data = await response.json();
 
